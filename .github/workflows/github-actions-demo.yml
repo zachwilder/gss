@@ -17,5 +17,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          git status
+          git checkout master
+          git pull git@github.berkeley.edu:wilderz/gss.git
       - run: echo "🍏 This job's status is ${{ job.status }}."
