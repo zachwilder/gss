@@ -12,7 +12,7 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v2
-        run: |
+      - run: |
             git config user.name zachwilder
             git config user.email wilderz@berkeley.edu
             git status
